@@ -100,7 +100,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID2}" sap2010:Annotation.AnnotationText="[Process title: Capybara_Fin009_Dispatcher][Version 1.0.3]&#xA;&#xA;[Process description:  This process will read the master excel file and loads each line item's open transaction into the queue.]&#xD;&#xA;&#xD;&#xA;[Applications Involved: Msedge, Ms Excel, Outlook]&#xA;&#xA;[Developer: sahil.baid@orica.com]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="687,874" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID2}" sap2010:Annotation.AnnotationText="[Process title: Capybara_Fin009_Dispatcher][Version 1.0.4]&#xA;&#xA;[Process description:  This process will read the master excel file and loads each line item's open transaction into the queue.]&#xA;&#xA;[Applications Involved: Msedge, Ms Excel, Outlook]&#xA;&#xA;[Developer: sahil.baid@orica.com]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="687,874" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -226,7 +226,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <Transition.Condition>[SystemException IsNot Nothing]</Transition.Condition>
           <Transition.To>
-            <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="624,1686" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+            <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="144,120" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
               <State.Entry>
                 <TryCatch DisplayName="Try to close all aplications" sap:VirtualizedContainerService.HintSize="578,1541" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                   <sap:WorkflowViewStateService.ViewState>
