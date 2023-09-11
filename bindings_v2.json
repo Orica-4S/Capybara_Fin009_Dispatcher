@@ -56,15 +56,6 @@
     {
       "resource": "queue",
       "value": {
-        "folderPath": {
-          "isExpression": true
-        }
-      },
-      "metadata": {}
-    },
-    {
-      "resource": "queue",
-      "value": {
         "name": {
           "defaultValue": "in_QueueName",
           "isExpression": true
