@@ -12,7 +12,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1722,4831</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1206,5583.000000000001</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Open_Required_Module_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -108,7 +108,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="[Workflow Name]:-&#xA;OpenRequiredModule&#xA;&#xA;[Description]:-&#xA;This workflow will open Required Module in SAP.&#xA;Enitre workflow is enclosed in try catch, in case of exceptions, a appropriate message will be logged and error will be rethrown to the calling workflow.&#xA;&#xA;[Config values]:-&#xA;&#xA;[Input]:-&#xA;in_MediumDelay - Timespan for delay&#xA;in_strModuleName - String containing Module Name to open in SAP.&#xA;in_LargeDelay - Double for Delay in Check AppState&#xA;&#xA;[Output]:-&#xA;out_SystemException - Exception containing System Exception detail.&#xA;&#xA;[Remarks]:- &#xA;In case of any errors the workflow will capture the error,log custom message  and rethrow the error." DisplayName="Open_Required_Module" sap:VirtualizedContainerService.HintSize="1732,4766" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="[Workflow Name]:-&#xA;OpenRequiredModule&#xA;&#xA;[Description]:-&#xA;This workflow will open Required Module in SAP.&#xA;Enitre workflow is enclosed in try catch, in case of exceptions, a appropriate message will be logged and error will be rethrown to the calling workflow.&#xA;&#xA;[Config values]:-&#xA;&#xA;[Input]:-&#xA;in_MediumDelay - Timespan for delay&#xA;in_strModuleName - String containing Module Name to open in SAP.&#xA;in_LargeDelay - Double for Delay in Check AppState&#xA;&#xA;[Output]:-&#xA;out_SystemException - Exception containing System Exception detail.&#xA;&#xA;[Remarks]:- &#xA;In case of any errors the workflow will capture the error,log custom message  and rethrow the error." DisplayName="Open_Required_Module" sap:VirtualizedContainerService.HintSize="1216,5518" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="RetryCount" />
     </Sequence.Variables>
@@ -118,8 +118,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1670,92" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Starting Bank Statement Postprocessing Module Workflow&quot;]" />
-    <TryCatch DisplayName="Try Catch for Opening required Module" sap:VirtualizedContainerService.HintSize="1670,4094" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1154,94" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Starting Bank Statement Postprocessing Module Workflow&quot;]" />
+    <TryCatch DisplayName="Try Catch for Opening required Module" sap:VirtualizedContainerService.HintSize="1154,4826" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -127,13 +127,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Sequence - Open Required Module" sap:VirtualizedContainerService.HintSize="1632,3280" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <Sequence DisplayName="Sequence - Open Required Module" sap:VirtualizedContainerService.HintSize="1116,4004" sap2010:WorkflowViewState.IdRef="Sequence_8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate SAP Fiori" sap:VirtualizedContainerService.HintSize="1570,107" sap2010:WorkflowViewState.IdRef="Activate_1">
+          <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate SAP Fiori" sap:VirtualizedContainerService.HintSize="1054,107" sap2010:WorkflowViewState.IdRef="Activate_1">
             <ui:Activate.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa50fe11-fb16-4e04-9b8b-ef25684517fd" InformativeScreenshot="b4eed7b9aa6248c1312e387f1882baec" Selector="&lt;html app='msedge.exe' title='*Home*' /&gt;&lt;webctrl id='shellAppTitle' /&gt;">
                 <ui:Target.TimeoutMS>
@@ -145,106 +145,163 @@
               </ui:Target>
             </ui:Activate.Target>
           </ui:Activate>
-          <ui:RetryScope DisplayName="Retry Scope for Opening Required Module" sap:VirtualizedContainerService.HintSize="1570,3022" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+          <ui:RetryScope DisplayName="Retry Scope for Opening Required Module" sap:VirtualizedContainerService.HintSize="1054,3746" sap2010:WorkflowViewState.IdRef="RetryScope_2">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1528,2438" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1012,3157" sap2010:WorkflowViewState.IdRef="Sequence_24">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="SAP Fiori Home" sap:VirtualizedContainerService.HintSize="1466,2327" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" OpenMode="Never" ScopeGuid="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="SAP Fiori Home" sap:VirtualizedContainerService.HintSize="950,3046" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" OpenMode="Never" ScopeGuid="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1432,2110" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,2828" sap2010:WorkflowViewState.IdRef="Sequence_23">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NCheckState DisplayName="Check App State 'Button - Search'" sap:VirtualizedContainerService.HintSize="1370,1995" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Timeout="[in_LargeDelay]" Version="V3">
+                          <uix:NCheckState DisplayName="Check App State 'Button - Search'" sap:VirtualizedContainerService.HintSize="854,623" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Timeout="[in_LargeDelay]" Version="V3">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="916,1778" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,404" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NClick ClickType="Single" DelayBefore="5" DisplayName="Click 'Button - Search'" sap:VirtualizedContainerService.HintSize="854,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
+                                <uix:NClick ClickType="Single" DelayBefore="5" DisplayName="Click 'Button - Search'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="https://launchpad.orica.net/fiori#Shell-home" ContentHash="YLj3hlXcUEeqEQlrWz4Pzw" DesignTimeRectangle="1212, 83, 36, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Search'" FullSelectorArgument="&lt;webctrl aria-label='Open Search' aria-role='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Open Search' aria-role='button' tag='A' type='' class='sapUshellShellHeadItm' aaname='' check:text='unchecked' /&gt;" Guid="21c4c0a0-82c7-40b0-96da-51c572c34530" InformativeScreenshot="1f7171fc0c661ccb0255a89c12ea8a95.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/lF5OzMWbb0qL7URC9lIqmg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <Delay Duration="[in_MediumDelay]" sap:VirtualizedContainerService.HintSize="854,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="1" DisplayName="Type Into 'Input  - Search In Apps'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Text="[in_strModuleName]" Version="V3">
-                                  <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://launchpad-sp.orica.net/fiori#Shell-home" ContentHash="b4hoBFOYtkuUtykCS5L3uQ" DesignTimeRectangle="995, 85, 295, 17" DesignTimeScaleFactor="0.6700000166893005" ElementType="InputBox" FriendlyName="'Input  - Search In Apps'" FullSelectorArgument="&lt;webctrl tag='DIV' id='searchFieldInShell-input' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' id='searchFieldInShell-input' type='' class='sapMInput sapMInputBase sapMInputBaseHeightMargin searchInput sapMFocus sapMInputFocused' aaname='' /&gt;" Guid="409e7d8b-6703-4ef6-bb0b-2396299b7004" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASsAAAAVCAYAAAAeo8jdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOrSURBVHhe7ZhnS2NBGIXzd3d/wX61YEQFGxbUSDR2P6jYMVEkKBiyhAQriiSoWMFesL3Leb0j45qIiWhu4DxwmHLvzJ0IHs68nl9/vEJRFOV20awoiioIeaJ/Y9qZm5ujKIpypXz+wFuz8ng8KsCWLVu2bmjTmhUhhLiNjMkqHZnmCSHkO8k6WRmzWl9fl5qaGikuLpaBgQF5fHzU+a9yf38vvb29cnx87My8Z2RkRLa2tpzR58D5BgcHpaenx5khhBQaWSer09NT6erqkpubGzWXyclJubi4cN74Gtgb5od903F9fS1+v1/Oz8+dmc+xtram5xwdHXVmCCGFRE7JKpVKSXNz87v0s7y8LPX19VJVVaV7PD09STAYlNbWVqmtrZVEIqEm1NnZKXV1dbK4uKgJrbGxUaqrq2V6elpNpaWlRd9Hatve3nZ2f2F/f1/6+/vl9vZW+vr61DRLSkpe093Gxobu//Dw4KwQubq6kqGhITk8PJTu7m5de3l5qeeCioqK9Pnz87OEw2Hx+XxSUVEhZWVl+j38XpyxoaHhw78NIeR7SWtWHyUrmML8/LyUlpaqOSEN7e3tyfDwsD7DGKZwd3fnrBJJJpNqRnjW1tamSQxrcDWzr5Awt6WlJe3PzMyoedlEIhEJhUK6DxIWjAh9GFimNAZTxD4wKSQrtDAgmBr6WB8IBDQpYp+VlRVdNzU1pQYLI9vd3dU5Qkh+yClZGZBEYBwwFbRNTU2adqCFhQU5ODjQ5NLR0aH1rXg8rqYxPj6u67EmFotpH9j1KrtvY+pV9j52/3+Ojo40JcFYIfRxhYTpQcCkNRgozo6rJjDfgnB+JKuzszN9Rgj5ebJOVjAZGJUpWuOqZicSALNBMRtXL6QXpBiYwuzs7GtawhrTB0g4pl5l9w12vcrex+7b4IyoUyHBASQ9JD7sjbOtrq7qO0hzME2kLeyPb56cnOg7ODvAe/itOzs7OiaE/Cw5JSskJdSTKisrJRqN6j8y0ofX69XaDq6DMAaYDWpb+Kdvb2/X5GKnJaxBXai8vFwmJia05vVRWrLrVekS2ObmppqiMTiMcRacz4ArHcwVpoS6GdISrqcwXiQtnBfzaPE9JESMcX5cIe0rKyHkZ8k6WRU6SFBjY2PO6AUYGowMBkUIcR85JatCx65XGXDFtOtVhBD3kVWyIoSQfJB1siKEkHzxxqx+W8nKpCu2bNmydUOb1qwoiqLcKDUrGBVFUZTbRbOiKKoA5JV/euLajw1pKNAAAAAASUVORK5CYII=" InformativeScreenshot="6289063eb3a6b658268989f1828d7d39.png" Reference="LG4KtCOhBk2huXB0kJPcoA/jLgGOPdGkUW8reGn4AAgPw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
-                                  </uix:NTypeInto.Target>
-                                </uix:NTypeInto>
-                                <uix:NClick ClickType="Single" DisplayName="Click 'Button_Image_PostSearch'" sap:VirtualizedContainerService.HintSize="854,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
-                                  <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://launchpad-sp.orica.net/fiori#Shell-home" ContentHash="jW9hQXucVEOy2runWwGQvw" DesignTimeRectangle="1296, 86, 11, 16" DesignTimeScaleFactor="0.6700000166893005" FriendlyName="'Button_Image_PostSearch'" FullSelectorArgument="&lt;webctrl id='searchFieldInShell-button-img' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchFieldInShell-button-img' tag='SPAN' type='' class='sapMBtnCustomIcon sapMBtnIcon sapMBtnIconLeft sapUiIcon' aaname='' /&gt;" Guid="9ec26d66-1f02-460f-b649-de7dedc13892" InformativeScreenshot="02fe4d0bc21bb71c8d0e6357d8f73b8e.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/RS7kZNqrxEGGmC5CwWYj_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-                                  </uix:NClick.Target>
-                                </uix:NClick>
-                                <uix:NClick ClickType="Single" DelayBefore="3" DisplayName="Click 'Button - Bank Statement Postprocessing'" sap:VirtualizedContainerService.HintSize="854,157" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
-                                  <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#Action-search&amp;/top=10&amp;filter=%7B%22dataSource%22%3A%7B%22type%22%3A%22Category%22%2C%22id%22%3A%22All%22%2C%22label%22%3A%22All%22%2C%22labelPlural%22%3A%22All%22%7D%2C%22searchTerm%22%3A%22Bank%20Statement%20Postprocessing%22%2C%22rootCondition%22%3A%7B%22type%22%3A%22Complex%22%2C%22operator%22%3A%22And%22%2C%22conditions%22%3A%5B%5D%7D%7D" ContentHash="JtV4P6jL8Eifc2IUKa4Z7Q" DesignTimeRectangle="44, 193, 176, 176" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Bank Statement Postprocessing'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' tag='A' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' check:text='Bank Statement Postprocessing' /&gt;" Guid="4af5a284-68e0-49c6-be81-1788dfa60d99" InformativeScreenshot="3cf3086acbaee234b800ffff97ede424.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/XlK3WW6BkEWRPwRdzfIYQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search for Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-                                  </uix:NClick.Target>
-                                </uix:NClick>
-                                <uix:NCheckState DisplayName="Check App State 'InputField_Company Code'" sap:VirtualizedContainerService.HintSize="854,684" sap2010:WorkflowViewState.IdRef="NCheckState_5" Timeout="[in_LargeDelay]" Version="V3">
-                                  <uix:NCheckState.IfExists>
-                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,207" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Open Bank Statement Posprocessing Module&quot;]" />
-                                    </Sequence>
-                                  </uix:NCheckState.IfExists>
-                                  <uix:NCheckState.IfNotExists>
-                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,467" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ClickType="Single" DisplayName="Click 'Button - Back'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
-                                        <uix:NClick.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#BankStatementPP-display" ContentHash="EsMRj6x3J0uBE7GhdOIAxg" DesignTimeRectangle="40, 83, 36, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Back'" FullSelectorArgument="&lt;webctrl id='backBtn' aria-label='Back' aria-role='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backBtn' aria-label='Back' aria-role='button' tag='A' type='' class='sapUshellShellHeadItm' aaname='' check:text='unchecked' /&gt;" Guid="593e27b0-73bd-41fb-ac22-d72b75fc7df6" InformativeScreenshot="e7f4ba05fcb19acb63448a4981ed1dd1.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/kd_nedd0CEa4OlZOQPxmng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-                                        </uix:NClick.Target>
-                                      </uix:NClick>
-                                      <uix:NClick ClickType="Single" DisplayName="Click 'Button - Bank Statement Postprocessing'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
-                                        <uix:NClick.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#Action-search&amp;/top=10&amp;filter=%7B%22dataSource%22%3A%7B%22type%22%3A%22Category%22%2C%22id%22%3A%22All%22%2C%22label%22%3A%22All%22%2C%22labelPlural%22%3A%22All%22%7D%2C%22searchTerm%22%3A%22Bank%20Statement%20Postprocessing%22%2C%22rootCondition%22%3A%7B%22type%22%3A%22Complex%22%2C%22operator%22%3A%22And%22%2C%22conditions%22%3A%5B%5D%7D%7D" ContentHash="JtV4P6jL8Eifc2IUKa4Z7Q" DesignTimeRectangle="44, 193, 176, 176" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Bank Statement Postprocessing'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' tag='A' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' check:text='Bank Statement Postprocessing' /&gt;" Guid="4af5a284-68e0-49c6-be81-1788dfa60d99" InformativeScreenshot="3cf3086acbaee234b800ffff97ede424.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/XlK3WW6BkEWRPwRdzfIYQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search for Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-                                        </uix:NClick.Target>
-                                      </uix:NClick>
-                                    </Sequence>
-                                  </uix:NCheckState.IfNotExists>
-                                  <uix:NCheckState.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://sapem-sp.es.orica.net/sap/bc/gui/sap/its/webgui;~service=3200;~rfcHostName=uswiemxcivm00.es.orica.net;~sncNameR3=p%2fkrb5%3aSAPServiceEMX%2fuswiemxcivm00.es.orica.net%40ORI.ORICA.NET;~sncQoPR3=3?%7etransaction=FEB_BSPROC&amp;%7enosplash=1&amp;sap-client=010&amp;sap-language=EN&amp;sap-ie=edge&amp;sap-theme=sap_belize&amp;sap-target-navmode=inplace&amp;sap-keepclientsession=1&amp;sap-shell=FLP1.60.40#" ContentHash="cIoY9qvc_EC6Whh2XgbikA" DesignTimeRectangle="505, 241, 31, 15" DesignTimeScaleFactor="0.6700000166893005" ElementType="InputBox" FriendlyName="'InputField_Company Code'" FullSelectorArgument="&lt;webctrl id='application-BankStatementPP-display-iframe' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='INPUT' aaname='Company Code' aria-role='textbox' name='InputField' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-BankStatementPP-display' /&gt;&lt;webctrl type='text' tag='INPUT' aaname='Company Code' class='lsField__input' /&gt;" Guid="3a5cd4c0-71c7-490c-b6a9-f6b2bcea489c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAATCAYAAAAao7T0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA8SURBVEhL7c6xCQAgEMVQ91/qj3aChSCS+q5IIP1bNaiDSdL+g+lMDCWGEkOJocRQYigx1Ifp/mJmVLUBIKcSM8Jph9kAAAAASUVORK5CYII=" InformativeScreenshot="87f9fd023779ecd4519f0915c7195ef2.png" Reference="HLXiEbo_V0mRw1lnkGk7zg/LyL5XAUrRUyqaJ8SHM4uEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SAP' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
-                                  </uix:NCheckState.Target>
-                                </uix:NCheckState>
+                                <Delay Duration="[in_MediumDelay]" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="Delay_5" />
                               </Sequence>
                             </uix:NCheckState.IfExists>
                             <uix:NCheckState.IfNotExists>
-                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,327" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="338,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3" />
-                                <Throw Exception="[New SystemException(&quot;Failed to find search button in SAP Fiori Home screen.&quot;)]" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                                <Throw Exception="[New SystemException(&quot;Failed to find search button in SAP Fiori Home screen.&quot;)]" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="Throw_2" />
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
                             <uix:NCheckState.Target>
                               <uix:TargetAnchorable BrowserURL="https://launchpad.orica.net/fiori#Shell-home" ContentHash="YLj3hlXcUEeqEQlrWz4Pzw" DesignTimeRectangle="1212, 83, 36, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Search'" FullSelectorArgument="&lt;webctrl aria-label='Open Search' aria-role='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Open Search' aria-role='button' tag='A' type='' class='sapUshellShellHeadItm' aaname='' check:text='unchecked' /&gt;" Guid="21c4c0a0-82c7-40b0-96da-51c572c34530" InformativeScreenshot="1f7171fc0c661ccb0255a89c12ea8a95.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/lF5OzMWbb0qL7URC9lIqmg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                          <uix:NCheckState DisplayName="Check App State 'ED1 Search 'All Option''" sap:VirtualizedContainerService.HintSize="854,751" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Timeout="300" Version="V3">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,532" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="1" DisplayName="Type Into 'Input  - Search In Apps'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,219" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Text="[in_strModuleName]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://launchpad-sp.orica.net/fiori#Shell-home" ContentHash="b4hoBFOYtkuUtykCS5L3uQ" DesignTimeRectangle="995, 85, 295, 17" DesignTimeScaleFactor="0.6700000166893005" ElementType="InputBox" FriendlyName="'Input  - Search In Apps'" FullSelectorArgument="&lt;webctrl tag='DIV' id='searchFieldInShell-input' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' id='searchFieldInShell-input' type='' class='sapMInput sapMInputBase sapMInputBaseHeightMargin searchInput sapMFocus sapMInputFocused' aaname='' /&gt;" Guid="409e7d8b-6703-4ef6-bb0b-2396299b7004" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASsAAAAVCAYAAAAeo8jdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOrSURBVHhe7ZhnS2NBGIXzd3d/wX61YEQFGxbUSDR2P6jYMVEkKBiyhAQriiSoWMFesL3Leb0j45qIiWhu4DxwmHLvzJ0IHs68nl9/vEJRFOV20awoiioIeaJ/Y9qZm5ujKIpypXz+wFuz8ng8KsCWLVu2bmjTmhUhhLiNjMkqHZnmCSHkO8k6WRmzWl9fl5qaGikuLpaBgQF5fHzU+a9yf38vvb29cnx87My8Z2RkRLa2tpzR58D5BgcHpaenx5khhBQaWSer09NT6erqkpubGzWXyclJubi4cN74Gtgb5od903F9fS1+v1/Oz8+dmc+xtram5xwdHXVmCCGFRE7JKpVKSXNz87v0s7y8LPX19VJVVaV7PD09STAYlNbWVqmtrZVEIqEm1NnZKXV1dbK4uKgJrbGxUaqrq2V6elpNpaWlRd9Hatve3nZ2f2F/f1/6+/vl9vZW+vr61DRLSkpe093Gxobu//Dw4KwQubq6kqGhITk8PJTu7m5de3l5qeeCioqK9Pnz87OEw2Hx+XxSUVEhZWVl+j38XpyxoaHhw78NIeR7SWtWHyUrmML8/LyUlpaqOSEN7e3tyfDwsD7DGKZwd3fnrBJJJpNqRnjW1tamSQxrcDWzr5Awt6WlJe3PzMyoedlEIhEJhUK6DxIWjAh9GFimNAZTxD4wKSQrtDAgmBr6WB8IBDQpYp+VlRVdNzU1pQYLI9vd3dU5Qkh+yClZGZBEYBwwFbRNTU2adqCFhQU5ODjQ5NLR0aH1rXg8rqYxPj6u67EmFotpH9j1KrtvY+pV9j52/3+Ojo40JcFYIfRxhYTpQcCkNRgozo6rJjDfgnB+JKuzszN9Rgj5ebJOVjAZGJUpWuOqZicSALNBMRtXL6QXpBiYwuzs7GtawhrTB0g4pl5l9w12vcrex+7b4IyoUyHBASQ9JD7sjbOtrq7qO0hzME2kLeyPb56cnOg7ODvAe/itOzs7OiaE/Cw5JSskJdSTKisrJRqN6j8y0ofX69XaDq6DMAaYDWpb+Kdvb2/X5GKnJaxBXai8vFwmJia05vVRWrLrVekS2ObmppqiMTiMcRacz4ArHcwVpoS6GdISrqcwXiQtnBfzaPE9JESMcX5cIe0rKyHkZ8k6WRU6SFBjY2PO6AUYGowMBkUIcR85JatCx65XGXDFtOtVhBD3kVWyIoSQfJB1siKEkHzxxqx+W8nKpCu2bNmydUOb1qwoiqLcKDUrGBVFUZTbRbOiKKoA5JV/euLajw1pKNAAAAAASUVORK5CYII=" InformativeScreenshot="6289063eb3a6b658268989f1828d7d39.png" Reference="LG4KtCOhBk2huXB0kJPcoA/jLgGOPdGkUW8reGn4AAgPw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'Button_Image_PostSearch'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://launchpad-sp.orica.net/fiori#Shell-home" ContentHash="jW9hQXucVEOy2runWwGQvw" DesignTimeRectangle="1296, 86, 11, 16" DesignTimeScaleFactor="0.6700000166893005" FriendlyName="'Button_Image_PostSearch'" FullSelectorArgument="&lt;webctrl id='searchFieldInShell-button-img' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchFieldInShell-button-img' tag='SPAN' type='' class='sapMBtnCustomIcon sapMBtnIcon sapMBtnIconLeft sapUiIcon' aaname='' /&gt;" Guid="9ec26d66-1f02-460f-b649-de7dedc13892" InformativeScreenshot="02fe4d0bc21bb71c8d0e6357d8f73b8e.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/RS7kZNqrxEGGmC5CwWYj_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Throw Exception="[new SystemException(&quot;Failed to type in the&quot;+&quot; &quot;+in_strModuleName +&quot; in the search field&quot;)]" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="Throw_4" />
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#Shell-home" ContentHash="_k--YodQ30OFoliw8IHrww" DesignTimeRectangle="600, 87, 82, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'ED1 Search 'All Option''" FullSelectorArgument="&lt;webctrl innertext='AllAll' ui5-label='Search In' ui5p-selectedKey='All' visibleinnertext='All&amp;#xA;All' /&gt;" FuzzySelectorArgument="&lt;webctrl innertext='AllAll' ui5-label='Search In' ui5p-selectedKey='All' visibleinnertext='All&amp;#xA;All' tag='DIV' type='' class='sapMSlt sapMSltDefault sapMSltMinWidth sapMSltAutoAdjustedWidth sapMSltHoverable sapMSltWithArrow searchSelect' aaname='' /&gt;" Guid="aa5ffb47-9829-4874-aa0d-22fb5cdf947c" InformativeScreenshot="eab40c1e4c9cf7bdfec840349c1b6ded.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/gI3IJ1tb2U6kR806tGhx9w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                          <uix:NCheckState DisplayName="Check App State 'Button - Bank Statement Postprocessing'" sap:VirtualizedContainerService.HintSize="854,492" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Timeout="300" Version="V3">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,273" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ClickType="Single" DelayBefore="10" DisplayName="Click 'Button - Bank Statement Postprocessing'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#Action-search&amp;/top=10&amp;filter=%7B%22dataSource%22%3A%7B%22type%22%3A%22Category%22%2C%22id%22%3A%22All%22%2C%22label%22%3A%22All%22%2C%22labelPlural%22%3A%22All%22%7D%2C%22searchTerm%22%3A%22Bank%20Statement%20Postprocessing%22%2C%22rootCondition%22%3A%7B%22type%22%3A%22Complex%22%2C%22operator%22%3A%22And%22%2C%22conditions%22%3A%5B%5D%7D%7D" ContentHash="JtV4P6jL8Eifc2IUKa4Z7Q" DesignTimeRectangle="44, 193, 176, 176" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Bank Statement Postprocessing'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' tag='A' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' check:text='Bank Statement Postprocessing' /&gt;" Guid="4af5a284-68e0-49c6-be81-1788dfa60d99" InformativeScreenshot="3cf3086acbaee234b800ffff97ede424.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/XlK3WW6BkEWRPwRdzfIYQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search for Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Throw Exception="[new SystemException(&quot;Failed to Click on the&quot;+&quot; &quot;+in_strModuleName +&quot; module tile&quot;)]" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="Throw_5" />
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#Action-search&amp;/top=10&amp;filter=%7B%22dataSource%22%3A%7B%22type%22%3A%22Category%22%2C%22id%22%3A%22All%22%2C%22label%22%3A%22All%22%2C%22labelPlural%22%3A%22All%22%7D%2C%22searchTerm%22%3A%22Bank%20Statement%20Postprocessing%22%2C%22rootCondition%22%3A%7B%22type%22%3A%22Complex%22%2C%22operator%22%3A%22And%22%2C%22conditions%22%3A%5B%5D%7D%7D" ContentHash="JtV4P6jL8Eifc2IUKa4Z7Q" DesignTimeRectangle="44, 193, 176, 176" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Bank Statement Postprocessing'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' tag='A' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' check:text='Bank Statement Postprocessing' /&gt;" Guid="4af5a284-68e0-49c6-be81-1788dfa60d99" InformativeScreenshot="3cf3086acbaee234b800ffff97ede424.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/XlK3WW6BkEWRPwRdzfIYQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search for Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                          <uix:NCheckState DisplayName="Check App State 'InputField_Company Code'" sap:VirtualizedContainerService.HintSize="854,727" sap2010:WorkflowViewState.IdRef="NCheckState_8" Timeout="[in_LargeDelay]" Version="V3">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,209" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Open Bank Statement Posprocessing Module&quot;]" />
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,508" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'Button - Back'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#BankStatementPP-display" ContentHash="EsMRj6x3J0uBE7GhdOIAxg" DesignTimeRectangle="40, 83, 36, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Back'" FullSelectorArgument="&lt;webctrl id='backBtn' aria-label='Back' aria-role='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='backBtn' aria-label='Back' aria-role='button' tag='A' type='' class='sapUshellShellHeadItm' aaname='' check:text='unchecked' /&gt;" Guid="593e27b0-73bd-41fb-ac22-d72b75fc7df6" InformativeScreenshot="e7f4ba05fcb19acb63448a4981ed1dd1.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/kd_nedd0CEa4OlZOQPxmng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'Button - Bank Statement Postprocessing'" sap:VirtualizedContainerService.HintSize="338,195" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a9db87c-dc3e-445c-b1bd-637b8c749613" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://launchpad-dt.orica.net/fiori#Action-search&amp;/top=10&amp;filter=%7B%22dataSource%22%3A%7B%22type%22%3A%22Category%22%2C%22id%22%3A%22All%22%2C%22label%22%3A%22All%22%2C%22labelPlural%22%3A%22All%22%7D%2C%22searchTerm%22%3A%22Bank%20Statement%20Postprocessing%22%2C%22rootCondition%22%3A%7B%22type%22%3A%22Complex%22%2C%22operator%22%3A%22And%22%2C%22conditions%22%3A%5B%5D%7D%7D" ContentHash="JtV4P6jL8Eifc2IUKa4Z7Q" DesignTimeRectangle="44, 193, 176, 176" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Button - Bank Statement Postprocessing'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' aaname='Bank Statement Postprocessing' aria-role='link' innertext='Bank Statement Postprocessing' tag='A' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' check:text='Bank Statement Postprocessing' /&gt;" Guid="4af5a284-68e0-49c6-be81-1788dfa60d99" InformativeScreenshot="3cf3086acbaee234b800ffff97ede424.png" Reference="ZsGeb0j2wEKo0O09iuStJQ/XlK3WW6BkEWRPwRdzfIYQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search for Bank Statement Postprocessing' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://sapem-sp.es.orica.net/sap/bc/gui/sap/its/webgui;~service=3200;~rfcHostName=uswiemxcivm00.es.orica.net;~sncNameR3=p%2fkrb5%3aSAPServiceEMX%2fuswiemxcivm00.es.orica.net%40ORI.ORICA.NET;~sncQoPR3=3?%7etransaction=FEB_BSPROC&amp;%7enosplash=1&amp;sap-client=010&amp;sap-language=EN&amp;sap-ie=edge&amp;sap-theme=sap_belize&amp;sap-target-navmode=inplace&amp;sap-keepclientsession=1&amp;sap-shell=FLP1.60.40#" ContentHash="cIoY9qvc_EC6Whh2XgbikA" DesignTimeRectangle="505, 241, 31, 15" DesignTimeScaleFactor="0.6700000166893005" ElementType="InputBox" FriendlyName="'InputField_Company Code'" FullSelectorArgument="&lt;webctrl id='application-BankStatementPP-display-iframe' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='INPUT' aaname='Company Code' aria-role='textbox' name='InputField' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-BankStatementPP-display' /&gt;&lt;webctrl type='text' tag='INPUT' aaname='Company Code' class='lsField__input' /&gt;" Guid="3a5cd4c0-71c7-490c-b6a9-f6b2bcea489c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAATCAYAAAAao7T0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA8SURBVEhL7c6xCQAgEMVQ91/qj3aChSCS+q5IIP1bNaiDSdL+g+lMDCWGEkOJocRQYigx1Ifp/mJmVLUBIKcSM8Jph9kAAAAASUVORK5CYII=" InformativeScreenshot="87f9fd023779ecd4519f0915c7195ef2.png" Reference="HLXiEbo_V0mRw1lnkGk7zg/LyL5XAUrRUyqaJ8SHM4uEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SAP' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
                             </uix:NCheckState.Target>
                           </uix:NCheckState>
                         </Sequence>
@@ -265,19 +322,19 @@
             </ui:RetryScope.ActivityBody>
             <ui:RetryScope.Condition>
               <ActivityFunc x:TypeArguments="x:Boolean">
-                <uix:NCheckState DisplayName="Check App State 'InputField_Company Code'" sap:VirtualizedContainerService.HintSize="854,424" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="[in_VeryLargeDelay]" Version="V3">
+                <uix:NCheckState DisplayName="Check App State 'InputField_Company Code'" sap:VirtualizedContainerService.HintSize="854,428" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="[in_VeryLargeDelay]" Version="V3">
                   <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,207" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,209" sap2010:WorkflowViewState.IdRef="Sequence_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Successfully Open Bank Statement Posprocessing Module&quot;]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Successfully Open Bank Statement Posprocessing Module&quot;]" />
                     </Sequence>
                   </uix:NCheckState.IfExists>
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,106" sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -301,7 +358,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1636,503" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1120,507" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -312,13 +369,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="400,434" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence sap:VirtualizedContainerService.HintSize="400,437" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Failed to Open Bank Statement Posprocessing Module&quot;]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Failed to Open Bank Statement Posprocessing Module&quot;]" />
               <Assign DisplayName="Assign System Exception" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_6">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:Exception">[out_SystemException]</OutArgument>
@@ -327,7 +384,7 @@
                   <InArgument x:TypeArguments="s:Exception">[exception]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Throw Exception="[new SystemException(&quot;Failed to open Bank Statement Postprocessing Module. Error: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+              <Throw Exception="[new SystemException(&quot;Failed to open Bank Statement Postprocessing Module. Error: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="Throw_1" />
             </Sequence>
           </ActivityAction>
         </Catch>
